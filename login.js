@@ -35,5 +35,5 @@ document.querySelector("button").addEventListener("click",function(event){
     getDATA.password==data.password)
     {alert("Login successful");}
 // ***********************username***************
-    localStorage.setItem("userData",JSON.stringify(data))
+    // localStorage.setItem("userData",JSON.stringify(data))
 })
