@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="buyHome.css">
+    <link rel="stylesheet" href="Payment.css">
+   
+    <title>Zee5 Watch Latest Movie & Web Series</title>
+
+
+
+
+</head>
+
+
+<body>
+    <link rel="html" href="unit2_project_web18_zee5\index.html">
+    <div id="nav">
+        <div id="home">
+            <a href="index.html">
+                <img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.50.87">
+            </a>
+        </div>
+        <div id=right>
+            <div id="login">
+                <a href="zee5_login_page.html">login</a>
+            </div>
+            <div id="sig">
+                <a href="sign_up_page.html">signup</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="info">
+
+        <p>Step 1 of 3</p>
+    </div>
+
+    <div class="container">
+
+
+
+
+        <form action="">
+
+            <div class="row">
+
+
+                <div class="col">
+
+                    <h3 class="title">Watch Ad-Free with Premium!</h3>
+                    <h5 class="que">&#x3f;</h5>
+
+                    <div class="inputBox">
+                        <span>&#10004</span>
+                        <p>2800+ Blockbuster Movies</p>
+
+                        <h5 class="que">&#x3f;</h5>
+
+                    </div>
+                    <div class="inputBox">
+
+                        <span>&#10004</span>
+                        <p>150+ Web Series</p>
+                        <h5 class="que">&#x3f;</h5>
+                    </div>
+                    <div class="inputBox">
+                        <span>&#10004</span>
+                        <p>Live TV, Before TV</p>
+                        <h5 class="que">&#x3f;</h5>
+                    </div>
+                    <div class="inputBox">
+                        <span>&#10004</span>
+                        <p>
+                            Offer: Extra 10% OFF on Cards</p>
+                        <h5 class="que">&#x3f;</h5>
+                    </div>
+                    <div class="inputBox">
+                        <span>&#10004</span>
+                        <p>
+                            Watch on Mobile, TV, Laptop</p>
+                        <h5 class="que">&#x3f;</h5>
+                    </div>
+                    <div class="inputBox">
+                        <span>&#10004</span>
+                        <p>
+                            Eduaurra Competitive Exams Learning</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div id="con">
+                <div class="innerbox">
+                    <div class="innerboxA">
+                        <div class="A">
+                            <div class="box">LIMITED PERIOD OFFER</div>
+
+
+                            <h4>12 months plan</h4>
+                            <p id="price">Effective price ₹50/month</p>
+                        </div>
+                        <div class="A">
+                            <h2>₹599<input type="checkbox" value="₹599"></h2>
+                            <label for="check"></label>
+                            <h6>₹1199</h6>
+                          
+
+                        </div>
+                    </div>
+                    <div class="innerboxB">
+                        You are missing this offer-Avail ₹50per month
+                    </div>
+                </div>
+                <div class="innerbox2">
+                    <div class="innerboxA">
+                        <div class="A">
+                            <div class="box">LIMITED PERIOD OFFER</div>
+                            <h4>3 months plan</h4>
+                            <p id="price">Effective price ₹50/month</p>
+                        </div>
+                        <div class="A">
+                            <h2>₹299<input type="checkbox" value="₹299"></h2>
+                            <h6>₹599</h6>
+
+                        </div>
+                    </div>
+                    <div class="innerboxB">
+                        You are missing this offer-Avail ₹50per month
+                    </div>
+                </div>
+             <a href="https://www.zee5.com/?utm_source=GoogleSearch&utm_medium=Mark_CPA&utm_campaign=Search_SVOD_ZEE5-Brand-ZEE5-Only-Ex-Performance&utm_term=ze%205&utm_content=Brand-ZEE5-Only-Ex-ETA&gclsrc=ds&gclsrc=ds"> <img id="google" src="data:image/png;base64,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" alt="Zee logo"></a>
+               
+
+                <input type="submit" value="Continue" class="submit-btn">
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+    
+
+
+
+
+
+
+</body>
+<div class="footer">
+    <footer>
+        Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved
+    </footer>
+</div>
+
+</html>
+<script src="buyHome.js">
+ 
+</script>

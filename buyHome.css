@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+   font-family: 'Poppins', sans-serif; 
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  
+}
+
+
+
+.container{
+   
+   
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  
+  
+  
+}
+
+.container form{
+    
+   
+    display: grid;
+ grid-template-columns: repeat(2,auto);
+    height: 450px;
+    align-items: center;
+    cursor: pointer;
+    gap:30px;
+   
+   
+  padding:20px;
+  margin-top: -15%;
+  
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  line-height: 2.5rem;
+}
+
+.container form .row{
+ display: grid;
+ grid-template-columns: repeat(2,auto);
+  flex-wrap: wrap;
+  gap:15px;
+  margin-top: -15%;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+.container form .row .col .title{
+    font-size: 30px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+@media all and (min-width: 700px) and (max-width: 1500px){
+    .container form{
+        height: 900px;
+        display: grid;
+     grid-template-columns: repeat(1,auto);
+   
+       
+       
+      padding:20px;
+      margin-top: auto;
+      
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      line-height: 2.5rem;
+    }
+    .container form .row{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+         flex-wrap: wrap;
+         gap:15px;
+         margin-top:5%;
+         line-height: 2.5rem;
+         cursor: pointer;
+       }
+   
+   
+
+}
+@media all and (min-width: 50px) and (max-width: 699px){
+    .container form{
+        height: 900px;
+        display: grid;
+     grid-template-columns: repeat(1,auto);
+   
+       
+       
+      padding:20px;
+      margin-top: auto;
+      
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      line-height: 2.5rem;
+    }
+    .container form .row{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+         flex-wrap: wrap;
+         gap:15px;
+         margin-top:5%;
+         line-height: 2.5rem;
+         cursor: pointer;
+       }
+   
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container form .submit-btn{
+  width: 95%;
+  justify-content: center;
+  padding:12px;
+  font-size: 17px;
+  background: #3727ae;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container form .submit-btn:hover{
+  background: #2e36cc;
+}
+span{
+    color: rgb(231, 99, 121);
+    float: left;
+    margin-left: 10px;
+}
+.que{
+    float: right;
+    color: grey;
+  
+   
+   position: relative;
+   margin-right: 2.5em;
+}
+#con{
+    
+    height: 100;
+    width: 500px;
+    border-left:0.5px dotted  ;
+    text-align: center;
+  
+}
+.innerbox{
+    height: 130px;
+   
+    margin: auto;
+    width: 95%;
+    border-radius: 5px;
+    
+}
+.innerbox2{
+    height: 130px;
+   
+    margin: auto;
+    width: 95%;
+    margin-top: 1rem;
+
+
+}
+
+.innerboxA{
+    height: 100px;
+    border:1px dotted grey ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   display: flex;
+    
+}
+.innerboxB{
+    background: rgba(20, 20, 238, 0.178);
+    height: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: blue;
+    text-align: center;
+    font-size: 10px;
+  
+  
+}
+
+.A{
+   
+    
+    height: 100px;
+    width: 50%;
+    cursor: pointer;
+    margin-right: 5%;
+   
+}
+#price{
+    font-size: 10px;
+    text-align: left;
+    margin-left: 18px;
+    font-weight: 200px;
+    margin-top: -20px;
+}
+h4{
+  margin-left: -5rem;
+}
+h2{
+    float: right;
+    margin-right: 20px;
+    margin-top: 1rem;
+    
+}
+h6{
+    float: right;
+    margin-right: 5px;
+    text-decoration: line-through;
+    margin-top: 1rem;
+    color: grey;
+    font-size: 15px;
+}
+.innerbox:hover{
+    background:linear-gradient(281.1deg,rgba(161,0,255,.1) -5.78%,rgba(255,0,0,.1) 114.22%);;
+}
+.innerbox2:hover{
+    background: linear-gradient(281.1deg,rgba(161,0,255,.1) -5.78%,rgba(255,0,0,.1) 114.22%);;
+}
+.box{
+    width: 150px;
+   
+    height: 40px;
+    background: #2f80ed;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 15px;
+    font-family:  "NotoSansBold","sans-serif";
+    
+   
+    color: white;
+   
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+body {
+   
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://akamaividz2.zee5.com/image/upload/w_205,h_308,c_scale,f_webp,q_auto:eco/resources/0-6-1298/portrait/1920x770d9ead07e5b304a989d85cf8c6e0113fb.jpg");
+    background: linear-gradient(rgba(6, 5, 5, 0.86), rgba(155, 136, 136, 0.5)), url("https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-2356/cover/1170x658withlogo40e0dfba38b343eaa8dcbcd0f5b8616d.jpg");
+    
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
+    
+    
+
+
+}
+
+img {
+    width: 55%;
+    margin-top: -9%
+}
+.footer{
+    height: 50px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgb(29, 28, 28);
+    color: white;
+    border-top:2px solid grey;
+}
+
+#sub{
+    color: white;
+    margin-top: 5%;
+    margin-left: 16%;
+    
+}
+.info{
+    
+    color: white;
+    width: 50%;
+    
+    margin: auto;
+    text-align: center;
+    
+    font-size: 60px;
+    margin-top: 7%;
+    margin-bottom: -2%;
+}
+
+#google{
+    height: 40px;
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+}
+input[type="checkbox"]{
+    margin-right:-4%;
+    position: absolute;
+   
+    width: 20px;
+    height:40px;
+    z-index: 2;
+    background: green;
+   
+  }
+
+  .container.form:after {
+    content: "";
+    background: #fff 50%/100% 100% no-repeat url(/images/premium-ic.svg?ver=2.51.46);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    border-radius: 25px;
+}
+  
+
+ 
+  
+
+
+

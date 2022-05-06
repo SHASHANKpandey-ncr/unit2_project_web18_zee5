@@ -1,0 +1,71 @@
+.container{
+    width: 50%;
+    margin: auto;
+    height: 500px;
+    margin-top: -15rem;
+}
+#input{
+    height: 200px;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+#prem {
+    width: 46.5%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:space-between;
+    margin-bottom: 3%;
+    background-color: rgb(249, 250, 239);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 2%
+    
+    
+}
+h3{
+    color: red;
+}
+#rupee{
+    
+  
+    position: relative;
+    
+    font-size: 40px;
+   
+
+}
+.info{
+    
+    color: white;
+    width: 20%;
+    
+    margin: auto;
+    font-weight: 900;
+    text-align: center;
+    
+    font-size: 50px;
+    margin-top: 2%;
+   
+}
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z571422/cover/1170x658withlogofb9c7dd6486345899c6d4f08e16f7f66.jpg");
+    background: linear-gradient(rgba(1, 0, 0, 0.86), rgba(168, 164, 164, 0.5)), url("https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-1298/cover/1170x658withlogoa0f9e6232dbb4374ae52b88d64d9a4c6.jpg");
+    background-size: cover;
+    
+
+}
+.container form .submit-btn{
+    width: 100%;
+    
+    padding:12px;
+    font-size: 17px;
+    background: #0751da;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
