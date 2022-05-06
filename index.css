@@ -68,7 +68,7 @@
 }
 .navbarCatagoryButton>h1:hover{color: purple;}
 .navbar>div>input{
-    width: 105%;
+    width: 115%;
     background-color: #0f0617;
     margin-top: 5%;
     height: 40%;
@@ -92,9 +92,9 @@
     cursor: pointer;
 }
 .buyplanButton{
-    height: 38%;
+    height: 39%;
     background-color: #8804fc;
-    border: 1px solid purple;
+    border: 1px solid #8804fc;
     border-radius: 5px;
     font-weight: bold; 
     margin-top: -5px;
