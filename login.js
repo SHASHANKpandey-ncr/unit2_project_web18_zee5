@@ -33,7 +33,9 @@ document.querySelector("button").addEventListener("click",function(event){
 
     else if(getDATA.name==data.name &&
     getDATA.password==data.password)
-    {alert("Login successful");}
+    {alert("Login successful");
+    window.location.href='index.html'
+}
 // ***********************username***************
     // localStorage.setItem("userData",JSON.stringify(data))
 })

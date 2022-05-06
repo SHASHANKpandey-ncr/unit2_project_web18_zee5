@@ -178,3 +178,10 @@ document.querySelector('.menuDropdown').innerHTML=
         window.location.reload()  
     })
     // footer script end
+
+
+    var object=JSON.parse(localStorage.getItem('userData'))
+    if(object!=null)
+    {
+        document.querySelector('.loginButton').innerText="Hi"+' '+object.name
+    }
