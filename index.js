@@ -185,3 +185,8 @@ document.querySelector('.menuDropdown').innerHTML=
     {
         document.querySelector('.loginButton').innerText="Hi"+' '+object.name
     }
+    var stat=localStorage.getItem('member')
+    if(stat=='true')
+    {
+        document.querySelector('.buyplanButton').innerText='Upgrade 😎✅'
+    }

@@ -28,6 +28,7 @@ function OTP(event){
     .then(function (isOkay) {
         if (isOkay) {
             
+            localStorage.setItem('member',true)
             window.location.href="index.html"
 
            
