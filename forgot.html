@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot-password</title>
+    <style>
+       *{background-color: #0f0617;
+    font-family: sans-serif;}
+
+    #container{width: 20%;margin: auto;
+    margin-top: 50px;}
+    
+#img>img{margin: auto;
+    display: flex;
+align-items: center;
+justify-content: center;}
+
+h4{color: white;text-align: center;}
+
+input:focus, textarea:focus, select:focus{
+            outline: none;}
+
+           input:hover{height: 40px;
+        font-size: 18px;}
+
+            #input{width: 100%;
+                color: white;
+border: none;
+border-bottom: 2px solid silver;
+  
+margin-top: 40px;
+}
+       input{width: 100%;
+        color: white;
+        border: none;}
+
+button{width: 100%;color: white;
+    border-radius: 6px;
+    height: 40px;
+    margin-top: 20px;
+border: 2px solid silver;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="img"><img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.46" alt="zee logo"></div>
+        <h4>Forgot Password</h4>
+        <div id="input"><input  id='email' type="text" placeholder="Please enter your Email Id "></div>
+         <button>Continue</button>
+    </div> 
+</body>
+</html>
+<script>
+var getDATA=JSON.parse(localStorage.getItem("userData"))
+
+
+    document.querySelector("button").addEventListener("click",function(){
+
+        var data={
+        email:document.getElementById("email").value,}
+        if(getDATA.email==data.email ){
+            window.location.href="login.html"
+        }
+
+    })
+
+
+
+
+
+</script>
