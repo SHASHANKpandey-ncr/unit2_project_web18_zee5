@@ -18,6 +18,7 @@ var dataObj={
 
 
 localStorage.setItem("userData",JSON.stringify(dataObj))
-
+alert('Sign-Up Successful')
 window.location.href="login.html"
+
 })

@@ -24,6 +24,9 @@ document.querySelector('.moviesDropdown').innerHTML=
 <div><img class="navbarmovieImage" src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-0-1z544916/list/1170x658withlogo68f7d11875894c2c88dee6da8a42ac8bbe8a0f6694444ee0a093a0448e376a6f.jpg" alt=""></div>
  
 `
+document.querySelector('.moviesDropdown').addEventListener('click',function(event){
+    window.location.href='exclusive.html'
+})
     }
     else{
         document.querySelector('.moviesDropdown').style.visibility='hidden'
@@ -31,6 +34,7 @@ document.querySelector('.moviesDropdown').innerHTML=
     }
 
 })
+
 
 // movie dropdown end
 
@@ -55,6 +59,9 @@ document.querySelector('.moviesDropdown').innerHTML=
 <div><img src="https://akamaividz2.zee5.com/image/upload/w_223,h_125,c_scale,f_webp,q_auto:eco/resources/0-9-400/list/abpmajha1170cb8e2b94f9244846a3be5bdaa87792f8.jpg" alt=""></div>
  
 `
+document.querySelector('.moviesDropdown').addEventListener('click',function(event){
+    window.location.href='Zee5-original.html'
+})
     }
     else{
         document.querySelector('.moviesDropdown').style.visibility='hidden'
@@ -79,13 +86,14 @@ navbarCatagoryButton.addEventListener('click',function(event){
         navbarCatagoryButton.style.cursor='pointer'
         document.querySelector('.catagoryDropdown').innerHTML=
 `   
-        <div><a href="">Live TV</a></div>
-        <div><a href="">Play</a></div>
-        <div><a href="">Kids</a></div>
-        <div><a href="">ZEEPLEX</a></div>
-        <div><a href="">Music</a></div>
-        <div><a href="">Stories</a></div>
+        <div><a href="Zee5-original.html">Live TV</a></div>
+        <div><a href="Zee5-original.html">Play</a></div>
+        <div><a href="Zee5-original.html">Kids</a></div>
+        <div><a href="Zee5-original.html">ZEEPLEX</a></div>
+        <div><a href="Zee5-original.html">Music</a></div>
+        <div><a href="Zee5-original.html">Stories</a></div>
 `
+
     }
   
   else{
@@ -135,6 +143,73 @@ document.querySelector('.menuDropdown').innerHTML=
 
 
 
+
+
+
+var productContainer=document.querySelectorAll('.product-container');
+var nxtBtn=document.querySelectorAll( '.next-btn');
+var preBtn=document.querySelectorAll( '.pre-btn');
+
+
+productContainer.forEach((item,i)=>{
+    var contDimensions=item.getBoundingClientRect();
+    var contwidth=contDimensions.width;
+    nxtBtn[i].addEventListener("click",()=>{
+        item.scrollLeft +=contwidth;
+        
+    })
+    preBtn[i].addEventListener('click',()=>{
+       item.scrollLeft -=contwidth;
+    })
+    
+})
+
+
+//  sliding part------------------------------------------------
+var index=0;
+var i=0;
+
+var slider=document.querySelectorAll(".slider");
+var line=document.querySelectorAll(".line");
+auto();
+function show(n){
+    for(i=0;i<slider.length;i++){
+        slider[i].style.display="none";
+
+    }
+    for(i=0;i<line.length;i++){
+        line[i].className=line[i].className.replace("active");
+        
+    }
+    slider[n-1].style.display=("block");
+    line[n-1].className += "  active";
+}
+function auto(){
+    index++;
+    if(index>slider.length){
+        index=1;
+
+    }
+    show(index);
+    setTimeout(auto,2000)
+}
+function plusSlide(n){
+    index +=n;
+    if(index>slider.length){
+        index=1;
+    }
+    if(index<1){
+        index=slider.length;
+    }
+    show(index)
+}
+function currentSlide(n){
+    index=n;
+    show(index);
+}
+ 
+
+
 // body script end
 
 
@@ -178,3 +253,15 @@ document.querySelector('.menuDropdown').innerHTML=
         window.location.reload()  
     })
     // footer script end
+
+
+    var object=JSON.parse(localStorage.getItem('userData'))
+    if(object!=null)
+    {
+        document.querySelector('.loginButton').innerText="Hi"+' '+object.name
+    }
+    var stat=localStorage.getItem('member')
+    if(stat=='true')
+    {
+        document.querySelector('.buyplanButton').innerText='Upgrade 😎✅'
+    }

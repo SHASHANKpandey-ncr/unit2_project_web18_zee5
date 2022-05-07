@@ -53,13 +53,16 @@ border: 2px solid silver;}
 </body>
 </html>
 <script>
-var getDATA=JSON.parse(localStorage.getItem("userData"))
+var getDATA=JSON.parse(localStorage.getItem("userData"));
 
-
+console.log(getDATA)
     document.querySelector("button").addEventListener("click",function(){
-
+event.preventDefault();
         var data={
         email:document.getElementById("email").value,}
+
+
+        console.log(data)
         if(getDATA.email==data.email ){
             window.location.href="login.html"
         }

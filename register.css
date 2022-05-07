@@ -120,3 +120,9 @@ border: 1px solid gray;
     margin-top: 15px;
 font-size: 13px;}
 #al>a{color: blueviolet;background-color: #0f0617;}
+
+
+.registerButton:hover{
+    cursor: pointer;
+    background-color: #20122c;
+}
