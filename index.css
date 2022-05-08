@@ -298,10 +298,30 @@ img{
    transition:  .5s;
    border-radius: 6px;
    cursor: pointer;
-   
+   transition: transform -1s ;
 
 }
-
+ 
+#container1  img:hover{
+   
+    transform: scale(1.2); 
+    border: 3px solid white;
+}
+#container2 img:hover{
+    
+    transform: scale(1.2); 
+    border: 3px solid white;
+}
+#container3  img:hover{
+    
+    transform: scale(1.3); 
+    border: 3px solid white;
+}
+#container4  img:hover{
+    
+    transform: scale(1.2); 
+    border: 3px solid white;
+}
  
 .movieHead{
    display: flex;
@@ -347,12 +367,22 @@ h2,h1{
  
   
 }
+#container4{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+   
+    gap:10px;
+    justify-content:space-between;
+    width:100%;
+  
+   
+ }
 
 
 
 .slider-container{
-   /* margin-top: 100px; */
-   position:sticky;
+   margin-top: 30px;
+   position:relative;
   
    height:auto;
    max-width: 100%;
