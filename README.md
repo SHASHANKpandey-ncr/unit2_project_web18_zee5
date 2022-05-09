@@ -1,6 +1,6 @@
 # ZEE5 CLONE:
 ZEE5 Clone.
-This is an individual project made for educational purpose by Shashank Pandey,Ashutosh Sharma, Sharun,Sugam and Ashish Ranjan.
+This is a group project made for educational purpose by Shashank Pandey,Ashutosh Sharma, Sharun,Sugam and Ashish Ranjan.
 
 The project is a clone of [Zee5](https://www.zee5.com/) which is an online video streaming Over The Top (OTT) platform.
 
@@ -73,7 +73,7 @@ strugled little bit during integration.
 Getting realtime data and working on it
 
 # Conclusion:
-We are very thankful for the support of my teammates and instructor for the completion of project in due time. We will look forward to add some feature and functionality which we left in this project for future expansion.
+We are very thankful for the support of our teammates and instructor for the completion of project in due time. We will look forward to add some feature and functionality which we left in this project for future expansion.
 
 ## Thanks for reading.
 
