@@ -29,7 +29,7 @@ I hope you will enjoy the reading….
    
 </p>
 
-## Glimes of the project
+## Glimpse of the project
 # 1. Landing Page
 
 ![image](https://user-images.githubusercontent.com/101327895/167396624-c2fbb47d-8d7a-4109-91de-c8d4f2bf15db.png)
