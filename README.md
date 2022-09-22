@@ -7,7 +7,7 @@ The project is a clone of [Zee5](https://www.zee5.com/) which is an online video
 
 # Welcome Here!
 Hello Readers,
-Site link:-https://joyful-horse-ba7b50.netlify.app/
+Site link:-https://zee5-clone-project.netlify.app/
 We have done this project with group of 5 members and build the clone of a very popular zee5 online platfor where user can entertain them self by watching various kind of videos. Have fun after the subscription .
 I hope you will enjoy the reading….
 
